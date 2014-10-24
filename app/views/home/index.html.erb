@@ -1,0 +1,122 @@
+<div id="container" class="home-template">    
+	<div class="featuredContainer">
+	    <div id="controls">
+	        <div class="left">
+	            <div class="hoverPrev">
+	                <div class="subHeroImage"><!-- --></div>
+	                <div class="textcontent">
+	                    <div class="postTitle"><!-- --></div>
+	                    <hr />
+	                    <div class="dateStamp"><!-- --></div>
+	                </div>
+	            </div>
+	            <div class="icon"><div class="icon-left"><!-- --></div></div>
+	        </div>
+	        <div class="right">
+	            <div class="hoverPrev">
+	                <div class="subHeroImage"><!-- --></div>
+	                <div class="textcontent">
+	                    <div class="postTitle"><!-- --></div>
+	                    <hr />
+	                    <div class="dateStamp"><!-- --></div>
+	                </div>
+	            </div>
+	            <div class="icon"><div class="icon-right"><!-- --></div></div>
+	        </div>
+	    </div>     
+	    <div class="featureContent">
+	        <div class="pagination"></div>
+	    </div>
+	</div>
+
+	<div class="wookmarkWrap">
+	    <div id="wookmark">
+		    <% @posts.each do |post| %>
+		        <article class="post tag-features item postContainer">
+		            <div class="tagShare">
+		       			<div class="tags" id=<%= "tag#{post.category_id}" -%>>          
+		       			<%= link_to post.category.name %>
+		                </div>
+		                    <div class="shareIcon icon-share"></div>
+		                    <div class="share">
+		                        <a class="icon-twitter" href="https://twitter.com/share?text=The%20Night%20Light%20feature%20list&url=http://178.62.52.186/nightlight-feature-list/"
+		                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"></a>
+		                        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://178.62.52.186/nightlight-feature-list/"
+		                            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
+		                        <a class="icon-googleplus" href="https://plus.google.com/share?url=http://178.62.52.186/nightlight-feature-list/"
+		                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"></a>
+		                    </div>
+		                </div>
+		            <a class="ajaxLink imageContain" href="nightlight-feature-list/index.html">
+		                <div class="subHeroImage">
+		                    <p><%= image_tag "#{post.image}#hero" %></p>
+		                </div>
+		            </a>
+		            <div class="contentWrap">
+		                <div class="content postContent">
+		                    <h1 class="postTitle">
+								<%= link_to post.name,home_show_path(id: post.id) %>
+		                    </h1>
+		                    <time class="dateStamp" datetime="2014-09-16">
+		                        <span>&mdash;&ensp;</span>
+		                        <i>Published 16 September 2014</i>
+		                        <span>&ensp;&mdash;</span>
+		                    </time>
+		                    <p><%= truncate(post.description, length: 120) %></p>
+		                <footer>
+		                    <a href="nightlight-feature-list/index.html" class="ajaxLink">
+		                        <div class="readMore">Read Me
+		                        </div>
+		                    </a>
+		                </footer>
+		                </div>
+		            </div>
+		        </article>
+			<% end %>
+			<% @slide.each do |slide| %>
+		        <article class="post tag-excerpt featured item postContainer">
+		            <div class="tagShare">
+		                <div class="tags"><a href="tag/excerpt/index.html">Excerpt</a></div>
+		                    <div class="shareIcon icon-share"></div>
+		                    <div class="share">
+		                        <a class="icon-twitter" href="https://twitter.com/share?text=On%20top%20of%20the%20night%20mountain&url=http://178.62.52.186/on-top-of-the-night-mountain/"
+		                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"></a>
+		                        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://178.62.52.186/on-top-of-the-night-mountain/"
+		                            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
+		                        <a class="icon-googleplus" href="https://plus.google.com/share?url=http://178.62.52.186/on-top-of-the-night-mountain/"
+		                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"></a>
+		                    </div>
+		                </div>
+		            <a class="ajaxLink imageContain" href="on-top-of-the-night-mountain/index.html">
+		                <div class="subHeroImage">
+		                    <p><%= image_tag "#{slide.image}#hero" %></p>
+		                </div>
+		            </a>
+		            <div class="contentWrap">
+		                <div class="content postContent">
+		                    <h1 class="postTitle">
+		                    <%= link_to slide.name, class: "ajaxLink" %></h1>
+
+		                    <time class="dateStamp" datetime="2014-09-16">
+		                        <span>&mdash;&ensp;</span>
+		                        <i>Published 16 September 2014</i>
+		                        <span>&ensp;&mdash;</span>
+		                    </time>
+		                    <p><%= truncate(slide.description, length: 130) %></p>
+		                <footer>
+		                    <a href="on-top-of-the-night-mountain/index.html" class="ajaxLink">
+		                        <div class="readMore">Read Me</div>
+		                    </a>
+		                </footer>
+		                </div>
+		            </div>
+		        </article>
+	        <% end %>
+	    </div>
+	    <div class="pagination pag" data-page="1" data-total-pages="2">      
+		</div>
+	</div>
+</div>
+
+
+

@@ -1,0 +1,25 @@
+<h1>Listing typecates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @typecates.each do |typecate| %>
+      <tr>
+        <td><%= typecate.name %></td>
+        <td><%= link_to 'Show', typecate %></td>
+        <td><%= link_to 'Edit', edit_typecate_path(typecate) %></td>
+        <td><%= link_to 'Destroy', typecate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Typecate', new_typecate_path %>

@@ -1,0 +1,56 @@
+<input type="checkbox" id="mainNavCheck" />
+
+<div id="sideBar" class="closeNav">
+    <nav>
+        <div class="logoContain">
+            <div class="logo"><span>Tver</span> Mech</div>
+            <div class="copy"><i>The ideal muli purpose<br />Ghost theme</i></div>
+        </div>
+        <ul id="mainNav">
+            <li class="menu">
+                <%= link_to root_path, class: "ajaxLink" do %>
+                    <span class="icon icon-house"><!-- --></span>
+                    <span class="title">Home</span>
+                <% end %>
+            </li>
+            <li class="openMenu">
+                <span class="icon icon-search"><!-- --></span>
+                <span class="title"> 
+                <%= form_tag root_path, method: :get do %>
+                    <%= text_field_tag :query, params[:query],class: "search", placeholder: "Seach..." %>
+                <% end %>
+                </span>
+            </li>
+            <% @typecates.each do |type| %>
+            <li class="openMenu">
+             <input type="checkbox" class="subMenuCheck" id=<%= "subMenuCheck#{type.id}" -%> />
+                <label for=<%= "subMenuCheck#{type.id}" -%> class=""/>
+                    <span class='<%= "icon #{type.icon}" -%>'> </span>
+                    <span class="title"><%= type.name %></span>
+                    <span class="expandButton icon-down"></span>
+                </label>
+                 <ul>
+                    <% type.categories.each do |category| %>
+                    <li><%= link_to category.name %></li>
+                    <% end %>
+                </ul>
+                
+            </li>
+            <% end %>
+            <li>
+                <a class="ajaxLink" href="contact/index.html">    
+                    <span class="icon icon-contact"><!-- --></span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="newsFeed">
+        <div id="feed">
+        <div class="previewContainer"><a class="ajaxLink" href="http://178.62.52.186/caminandes-gran-dillama-youtube-com/"><div class="prevImage" style="background-image:url(shanghiThumb.jpg);"></div><div class="content"><div class="dot"></div><div class="dateStamp">16 Sep 2014</div><h1 class="postTitle">Caminandes: Gran Dillama - youtube.com</h1></div></a></div>
+
+        <div class="previewContainer"><a class="ajaxLink" href="on-top-of-the-night-mountain/"><div class="prevImage" style="background-image:url(nightmountainThumb.jpg);"></div><div class="content"><div class="dot"></div><div class="dateStamp">16 Sep 2014</div><h1 class="postTitle">On top of the night mountain</h1></div></a></div>
+
+        </div>
+    </div>
+</div>

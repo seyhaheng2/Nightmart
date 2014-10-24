@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+#tag1{
+   background:#FED604;
+}
+#tag2{
+  background: #00AFAB;
+}
+#tag3{
+  background: #81B5DD;
+}
+#tag4{
+  background: #F27E43;
+}
+#tag5{
+  background-color: #00AFAB;
+}
+#tag6{
+}
+#tag7{
+}
+#tag8{
+  background: #E46763;
+
+}
+
+@font-face {
+  font-family: 'Flaticon';
+  src: url(/assets/flaticon.eot);
+  src: url(/assets/flaticon.eot#iefix) format("embedded-opentype"),
+  url(/assets/flaticon.woff) format("woff"),
+  url(/assets/flaticon.ttf) format("truetype"),
+  url(/assets/flaticon.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url(/assets/icomoon--fy87ll.eot);
+  src: url(/assets/icomoon--fy87ll.eot?#iefix) format("embedded-opentype"),
+    url(/assets/icomoon--fy87ll.ttf) format("truetype"),
+    url(/assets/icomoon--fy87ll.woff) format("woff"),
+    url(/assets/icomoon--fy87ll.svg#icofonts) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.tagShare .tags a {
+padding: 0 10px;
+text-transform: uppercase;
+}
+
+
+
+.search{
+border: none;
+-webkit-border-radius: 90px;
+        border-radius: 90px;
+width: 70%;
+letter-spacing: normal;
+padding-left:15px;
+padding-right:15px;
+padding-top:3px;
+padding-bottom: 3px;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+background: #15232B;
+color:#fff;
+height: 35px;
+outline: none;
+}
