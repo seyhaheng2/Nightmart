@@ -8,6 +8,7 @@ group :production do
 end
 
 gem 'carrierwave'
+gem 'disqus_rails'
 gem 'better_errors'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'

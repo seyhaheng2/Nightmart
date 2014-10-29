@@ -11,7 +11,7 @@ class HomeController < ApplicationController
         @posts = Post.in_category(cate_id)
           .paginate(:page => params[:page], :per_page => 12)
       else
-        @posts = Post.all.paginate(:page => params[:page], :per_page => 12)
+        @posts = Post.all.paginate(:page => params[:page], :per_page => 4)
       end
     end
   end

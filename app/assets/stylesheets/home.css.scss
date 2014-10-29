@@ -1,3 +1,32 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.current{
+  background: #EF6752;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-border-radius: 90px;
+          border-radius: 90px;
+  color:#fff;
+}
+
+
+.next_page{
+
+}
+
+.pagination{
+	a{
+	background: #fff;
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+  	-webkit-border-radius: 90px;
+          border-radius: 90px;
+	text-decoration: none;
+		
+	}
+}
