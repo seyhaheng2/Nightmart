@@ -14,10 +14,10 @@
  *= require_self
  */
 #tag1{
-   background:#FED604;
+   background: #ffc95a;
 }
 #tag2{
-  background: #00AFAB;
+  background: #804ede;
 }
 #tag3{
   background: #81B5DD;
@@ -26,13 +26,31 @@
   background: #F27E43;
 }
 #tag5{
-  background-color: #00AFAB;
+  background: #00AFAB;
 }
 #tag6{
+  background: #D9007E;
 }
 #tag7{
+  background: #DD4814;
 }
 #tag8{
+  background: #E46763;
+
+}
+#tag9{
+  background: #d94ede;
+
+}
+#tag10{
+  background: #98e952;
+
+}
+#tag11{
+  background: #E46763;
+
+}
+#tag12{
   background: #E46763;
 
 }

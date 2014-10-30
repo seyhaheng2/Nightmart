@@ -47,11 +47,11 @@
 		                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"></a>
 		                    </div>
 		                </div>
-		            <a class="ajaxLink imageContain" href="nightlight-feature-list/index.html">
+		            <%= link_to home_show_path(id: post.id),class: "ajaxLink imageContain" do%>
 		                <div class="subHeroImage">
 		                    <p><%= image_tag "#{post.image}#hero" %></p>
 		                </div>
-		            </a>
+		            <% end %>
 		            <div class="contentWrap">
 		                <div class="content postContent">
 		                    <h1 class="postTitle">
@@ -59,7 +59,11 @@
 		                    </h1>
 		                    <time class="dateStamp" datetime="2014-09-16">
 		                        <span>&mdash;&ensp;</span>
-		                        <i>Published 16 September 2014</i>
+		                        <i>posted on<% if post.created_at > Time.now.beginning_of_day %>
+                                 <%="#{time_ago_in_words(post.created_at)} ago"%> 
+                              <% else %> 
+                                 <%= post.created_at.strftime("%b %d, %Y") %>
+                              <% end %></i>
 		                        <span>&ensp;&mdash;</span>
 		                    </time>
 		                    <p><%= truncate(post.description, length: 120) %></p>
