@@ -1,20 +1,22 @@
-<div id="container" class="post-template tag-features">
-   <article id="postMain" class="post tag-features">
+<div id="container" class="post-template tag-video">
+   <article id="postMain" class="post tag-video">
       
       <section class="postContent">
          <h1 class="postTitle"><%= @post.name %></h1>
          <time class="dateStamp" datetime="2014-09-16">
          <span>&mdash;&ensp;</span>
-         <i>Published 16 September 2014</i>
+         <i>Posted 
+            <% if @post.created_at > Time.now.beginning_of_day %>
+               <%="#{time_ago_in_words(@post.created_at)} ago"%> 
+            <% else %> 
+               <%= @post.created_at.strftime("%b %d, %Y") %>
+            <% end %>
+         </i>
          <span>&ensp;&mdash;</span>
          </time>
 
          <p><%= @post.description.html_safe%></p>
       </section>
-  
-
-
-
    </article>
 
 
@@ -22,5 +24,6 @@
 <%= disqus_init %>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
 
 

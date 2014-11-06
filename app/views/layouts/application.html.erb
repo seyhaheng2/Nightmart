@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag   'style-v=14f0b9ad25.css' %>
     <%= stylesheet_link_tag   'css/nprogress-v=14f0b9ad25.css' %>
     <%= stylesheet_link_tag   'css/style-compressed-v=14f0b9ad25.css' %>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <!-- 	<link rel="stylesheet" type="text/css" href="assets/css/normalize-v=14f0b9ad25.css" />
     <link rel="stylesheet" type="text/css" href="assets/style-v=14f0b9ad25.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/nprogress-v=14f0b9ad25.css" />    
@@ -19,7 +19,7 @@
     
     <noscript><style>.wookmarkWrap #wookmark .item{visibility: visible;}</style></noscript>
 </head>
-<body class="preload home-template">
+<body class="home-template">
   
 	<div id="wrapper">
 		<%= render "layouts/header" %>
@@ -46,18 +46,16 @@
 	<%= javascript_include_tag 'js/nprogress.js?v=14f0b9ad25' %>
 	<%= javascript_include_tag 'js/jquery.fitvids.js?v=14f0b9ad25' %>
 	<%= javascript_include_tag 'js/jquery.ghostHunter.js?v=14f0b9ad25' %>
-    <%= javascript_include_tag 'js/script-compressed.js?v=14f0b9ad25' %>
-    <%= javascript_include_tag 'js/modernizr.js?v=14f0b9ad25' %>
+  <%= javascript_include_tag 'js/script-compressed.js?v=14f0b9ad25' %>
+  <%= javascript_include_tag 'js/modernizr.js?v=14f0b9ad25' %>
 	<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-55541427-1', 'auto');
       ga('send', 'pageview');
-
-    </script>    
+  </script>    
 
 
 </body>

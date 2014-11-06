@@ -59,14 +59,16 @@
 		                    </h1>
 		                    <time class="dateStamp" datetime="2014-09-16">
 		                        <span>&mdash;&ensp;</span>
-		                        <i>posted on<% if post.created_at > Time.now.beginning_of_day %>
+		                        <i>posted <% if post.created_at > Time.now.beginning_of_day %>
                                  <%="#{time_ago_in_words(post.created_at)} ago"%> 
                               <% else %> 
                                  <%= post.created_at.strftime("%b %d, %Y") %>
                               <% end %></i>
 		                        <span>&ensp;&mdash;</span>
 		                    </time>
-		                    <p><%= truncate(post.description, length: 120) %></p>
+		                    <p style="text-align:justify;">
+		                    <%= truncate( raw( sanitize(post.description, :tags => %w(table tr td), :attributes => %w(id class style) ) ), :length => 130, :omission => "...") %>
+		                    </p>
 		                <footer>
 		                    <a href="nightlight-feature-list/index.html" class="ajaxLink">
 		                        <div class="readMore">Read Me
@@ -117,7 +119,8 @@
 		        </article>
 	        <% end %>
 	    </div>
-	    <div class="pagination pag" data-page="1" data-total-pages="2">     <%= will_paginate @posts %> 
+	    <div class="pagination pag" data-page="1" data-total-pages="2">    
+	     <%= will_paginate @posts %> 
 		</div>
 	</div>
 </div>

@@ -1,4 +1,4 @@
-ActiveAdmin.register Slide do
+ActiveAdmin.register Slide, as: "Wowslide" do
 
 
   # See permitted parameters documentation:
@@ -14,5 +14,5 @@ ActiveAdmin.register Slide do
   #   permitted
   # end
 
-
+  permit_params :name, :image, :description, :video
 end
