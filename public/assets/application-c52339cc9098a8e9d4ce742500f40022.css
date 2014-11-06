@@ -1,0 +1,262 @@
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+
+}.flaticon-android3:before {
+	content: "\e000";
+}
+.flaticon-computer12:before {
+	content: "\e001";
+}
+.flaticon-computer73:before {
+	content: "\e002";
+}
+.flaticon-computers3:before {
+	content: "\e003";
+}
+.flaticon-desktop:before {
+	content: "\e004";
+}
+.flaticon-facebook11:before {
+	content: "\e005";
+}
+.flaticon-gamepad5:before {
+	content: "\e006";
+}
+.flaticon-network3:before {
+	content: "\e007";
+}
+.flaticon-personal5:before {
+	content: "\e008";
+}
+.flaticon-smartphone:before {
+	content: "\e009";
+}
+.flaticon-smartphone11:before {
+	content: "\e00a";
+}
+.flaticon-social6:before {
+	content: "\e00b";
+}
+.flaticon-social71:before {
+	content: "\e00c";
+}
+.flaticon-three104:before {
+	content: "\e00d";
+}
+.flaticon-twitter5:before {
+	content: "\e00e";
+}
+.flaticon-youtube3:before {
+	content: "\e00f";
+}
+/* line 4, /Users/sino/Desktop/Nightmart/app/assets/stylesheets/home.css.scss */
+.current {
+  background: #EF6752;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
+  color: #fff;
+}
+
+/* line 21, /Users/sino/Desktop/Nightmart/app/assets/stylesheets/home.css.scss */
+.pagination a {
+  background: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
+  text-decoration: none;
+}
+
+
+
+[class^="icon-"], [class*=" icon-"]{
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-down:before {
+	content: "\34";
+}
+.icon-about:before {
+	content: "\61";
+}
+.icon-share:before {
+	content: "\65";
+}
+.icon-facebook:before {
+	content: "\66";
+}
+.icon-googleplus:before {
+	content: "\67";
+}
+.icon-house:before {
+	content: "\68";
+}
+.icon-left:before {
+	content: "\6c";
+}
+.icon-contact:before {
+	content: "\6d";
+}
+.icon-right:before {
+	content: "\72";
+}
+.icon-pen:before {
+	content: "\73";
+}
+.icon-twitter:before {
+	content: "\74";
+}
+.icon-menu:before {
+	content: "\4c";
+}
+.icon-search:before {
+	content: "\7a";
+}
+.icon-phone:before {
+	content: "\70";
+}
+.icon-clock:before {
+	content: "\63";
+}
+.icon-earth:before {
+	content: "\45";
+}
+.icon-location:before {
+	content: "\50";
+}
+
+/* Localized */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+#tag1{
+   background: #ffc95a;
+}
+#tag2{
+  background: #804ede;
+}
+#tag3{
+  background: #81B5DD;
+}
+#tag4{
+  background: #F27E43;
+}
+#tag5{
+  background: #00AFAB;
+}
+#tag6{
+  background: #D9007E;
+}
+#tag7{
+  background: #DD4814;
+}
+#tag8{
+  background: #E46763;
+
+}
+#tag9{
+  background: #d94ede;
+
+}
+#tag10{
+  background: #98e952;
+
+}
+#tag11{
+  background: #E46763;
+
+}
+#tag12{
+  background: #E46763;
+
+}
+
+@font-face {
+  font-family: 'Flaticon';
+  src: url(/assets/flaticon.eot);
+  src: url(/assets/flaticon.eot#iefix) format("embedded-opentype"),
+  url(/assets/flaticon.woff) format("woff"),
+  url(/assets/flaticon.ttf) format("truetype"),
+  url(/assets/flaticon.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url(/assets/icomoon--fy87ll.eot);
+  src: url(/assets/icomoon--fy87ll.eot?#iefix) format("embedded-opentype"),
+    url(/assets/icomoon--fy87ll.ttf) format("truetype"),
+    url(/assets/icomoon--fy87ll.woff) format("woff"),
+    url(/assets/icomoon--fy87ll.svg#icofonts) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.tagShare .tags a {
+padding: 0 10px;
+text-transform: uppercase;
+}
+
+
+
+.search{
+border: none;
+-webkit-border-radius: 90px;
+        border-radius: 90px;
+width: 70%;
+letter-spacing: normal;
+padding-left:15px;
+padding-right:15px;
+padding-top:3px;
+padding-bottom: 3px;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+background: #15232B;
+color:#fff;
+height: 35px;
+outline: none;
+}
+p{
+  background: none;
+}
+
+
